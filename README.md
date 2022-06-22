@@ -1,9 +1,9 @@
 # vim-nvim-setup
 setup for vim/nvim
 
-#how to install
+## how to install
 
-#clone vundle:
+## clone vundle:
 
 ```bash
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -25,7 +25,7 @@ check if plugins are installed:
 :PluginList:
 ```
 
-#configure nvim to run on vim setup
+## configure nvim to run on vim setup
 
 in nvim: 
 
@@ -43,7 +43,7 @@ let &packpath = &runtimepath
 source ~/.vimrc
 ```
 
-#configure vim to run nvim instead of vim (handy)
+## configure vim to run nvim instead of vim (handy)
 
 ```bash
 CUSTOM_NVIM_PATH=/usr/local/bin/nvim.appimage 
