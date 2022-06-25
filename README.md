@@ -25,6 +25,12 @@ check if plugins are installed:
 :PluginList:
 ```
 
+## fix "build/index.js not found (coc.nvim)"
+
+```bash
+cd ~/.vim/bundle/coc.nvim && npm install
+```
+
 ## configure nvim to run on vim setup
 
 in nvim: 
