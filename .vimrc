@@ -19,7 +19,7 @@ Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
+" Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -33,6 +33,12 @@ Plugin 'sheerun/vim-polyglot'
 Plugin 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plugin 'vim-airline/vim-airline'
 Plugin 'karb94/neoscroll.nvim'
+Plugin 'BurntSushi/ripgrep'
+Plugin 'sharkdp/fd'
+Plugin 'kyazdani42/nvim-web-devicons'
+Plugin 'morhetz/gruvbox'
+Plugin 'sainnhe/sonokai'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -49,3 +55,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 syntax on
 set number
+autocmd vimenter * ++nested colorscheme gruvbox
+" autocmd vimenter * ++nested colorscheme sonokai
+
+map <Leader>bed :Telescope find_files<CR>
